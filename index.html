@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags and title -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M ARSHMAAN INDIA PRIVATE LIMITED</title>
+    <!-- Favicon -->
+    <!--<link rel="icon" href="path/to/your/favicon.ico" sizes="32x32" type="image/x-icon">-->
+    <link rel="icon" href="img/hotel_blue_logo.jpeg" sizes="32x32" type="image/png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Include Bootstrap CSS and JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        .nav-link:hover {
+            color: rgba(255, 234, 0, 0.834) !important;
+        }
+
+        .text-spacing {
+            letter-spacing: .7px;
+        }
+
+        .carousel-item img {
+            border-radius: 0.5rem;
+            /* Rounded corners for images */
+        }
+
+        .card {
+            transition: transform 0.3s;
+            /* Smooth scaling effect */
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            /* Scale up on hover */
+        }
+
+        .bg-warning {
+            background-color: #ffc107 !important;
+            /* Bootstrap warning color */
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            /* Bootstrap primary color */
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            /* Darker shade on hover */
+        }
+
+        .text-dark {
+            color: #343a40 !important;
+            /* Dark text color */
+        }
+
+        .rounded {
+            border-radius: 10px;
+            /* Rounded corners */
+        }
+
+        .shadow-lg {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            /* Shadow effect */
+        }
+
+
+        .bg-gradient-custom {
+            background: linear-gradient(to bottom, #e6f7e6, #ffffff);
+        }
+
+        .expert-heading {
+            color: #2d7a2f;
+        }
+
+        .team-title {
+            font-size: 3rem;
+            font-weight: 900;
+            color: #212529;
+        }
+
+        .card-text-custom {
+            color: #495057;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .shadow-custom {
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-4">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <!-- Left: Logo and Social Media Icons -->
+            <div class="d-flex align-items-center">
+                <a class="navbar-brand" href="#">
+                    <img src="img/hotel_remove_bg_logo.png" alt="Hotel Logo" style="width: 70px; height: auto;">
+                </a>
+                <!-- Social Media Icons -->
+                <div class="d-flex ms-3">
+                    <a href="#" class="mx-2 text-black-50"><ion-icon class="fs-5" name="logo-twitter"></ion-icon></a>
+                    <a href="#" class="mx-2 text-black-50"><ion-icon class="fs-5" name="logo-facebook"></ion-icon></a>
+                    <a href="#" class="mx-2 text-black-50"><ion-icon class="fs-5" name="logo-instagram"></ion-icon></a>
+                </div>
+            </div>
+            <!-- Center: Navbar Links -->
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link active text-black-50 navm" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black-50 text-spacing" href="#discover">DISCOVER OFFERING</a>
+                    </li>
+                    <!--<li class="nav-item">-->
+                    <!--    <a class="nav-link text-black-50 text-spacing" href="#">ABOUT US</a>-->
+                    <!--</li>-->
+                    <li class="nav-item">
+                        <a class="nav-link text-black-50 text-spacing" href="#contact">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black-50 text-spacing" href="privacy.html">PRIVACY POLICY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black-50 text-spacing" href="terms.html">TERM & CONDITION</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Right: Search Icon (hidden on small screens) -->
+            <div class="d-flex align-items-center">
+                <a href="#" class="d-none d-lg-block text-black fw-bold">
+                    <ion-icon class="fs-4 fw-bold" name="search-outline"></ion-icon>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Full-height container with background image and overlay -->
+    <div class="container-fluid bg-dark d-flex align-items-center justify-content-center p-0 position-relative"
+        style="background-image: url('https://images.pexels.com/photos/7213364/pexels-photo-7213364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-size: cover; background-attachment: fixed; min-height: 100vh;">
+
+        <!-- Semi-transparent black overlay -->
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0, 0, 0, 0.5);">
+        </div>
+
+        <!-- Content on top of the overlay -->
+        <div class="w-100 h-100 d-flex text-white flex-column position-relative">
+            <!-- Left side content (Title) -->
+            <div class="col-lg-6 d-flex justify-content-start align-items-center p-5 bg-transparent">
+                <h1 class="display-4 fw-bold text-start">M ARSHMAAN INDIA PRIVATE LIMITED</h1>
+            </div>
+            <!-- Right side content (Description) -->
+            <div class="col-lg-6 d-flex justify-content-end align-items-end p-5 bg-transparent ms-auto">
+                <div>
+                    <h2 class="text-center fw-bold">M ARSHMAAN INDIA PRIVATE LIMITED</h2>
+                    <p class="text-center fs-5"> is a diversified company operating in hospitality and e-commerce. It
+                        runs luxurious resorts and hotels, the freshKart platform for fresh groceries, and fantasy
+                        sports platforms Fx-Fantasy and Mx-Fantasy. Committed to quality and customer satisfaction, the
+                        company aims to deliver exceptional experiences while fostering innovation and excellence across
+                        its various ventures.</p>
+                </div>
+            </div>
+            <!--<div class="bg-transparent d-flex justify-content-center fs-5" style="cursor:pointer;">-->
+            <!--    ↓ Find out how!-->
+            <!--</div>-->
+        </div>
+    </div>
+
+
+    <!-- Slider Section -->
+    <section class="w-100 py-4 py-md-5 bg-light" id="discover">
+        <div class="mx-1 px-5">
+            <h2 class="text-3xl font-bold text-center mb-5">Discover Our Offerings</h2>
+            <div id="serviceCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card text-center shadow-lg border-0">
+                            <div class="d-flex justify-content-center">
+                                <img src="img/hotelsLogo_removebg.png" style="width: 400px; height: 340px;"
+                                    class="card-img-top" alt="Resorts & Hotels">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Resorts & Hotels</h3>
+                                <p class="card-text">Experience luxury in stunning locations with world-class amenities
+                                    and personalized services. Our resorts offer breathtaking views, exquisite dining
+                                    options, and a range of activities to ensure a memorable stay. Whether you're
+                                    looking for a romantic getaway or a family vacation, we have the perfect
+                                    accommodations for you.</p>
+                                <h5>Key Features:</h5>
+                                <ul class="list-unstyled">
+                                    <li>🌅 Stunning locations with picturesque views</li>
+                                    <li>🏨 World-class amenities including spas and pools</li>
+                                    <li>🤵 Personalized services tailored to your needs</li>
+                                    <li>🍽️ Gourmet dining experiences with local cuisine</li>
+                                    <li>🏖️ Access to exclusive beaches and recreational activities</li>
+                                </ul>
+                                <!--<a href="#" class="btn btn-primary">Book Your Stay</a>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card text-center shadow-lg border-0">
+                            <div class="d-flex justify-content-center">
+                                <img src="img/freshcartLogo-removebg.png" style="width: 400px; height: 340px;"
+                                    class="card-img-top" alt="FreshKart">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">FreshKart</h3>
+                                <p class="card-text">Your go-to platform for fresh and organic groceries delivered to
+                                    your doorstep. We partner with local farmers and suppliers to bring you the best
+                                    quality produce, dairy, and pantry staples. Enjoy the convenience of shopping from
+                                    home while supporting sustainable practices.</p>
+                                <h5>Key Features:</h5>
+                                <ul class="list-unstyled">
+                                    <li>🥦 Fresh and organic produce sourced locally</li>
+                                    <li>🛒 Convenient online shopping with easy navigation</li>
+                                    <li>🚚 Fast delivery options to fit your schedule</li>
+                                    <li>📦 Subscription services for regular deliveries</li>
+                                    <li>💳 Secure payment options and easy returns</li>
+                                </ul>
+                                <!--<a href="#" class="btn btn-primary">Shop Fresh Now</a>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card text-center shadow-lg border-0">
+                            <div class="d-flex justify-content-center">
+                                <img src="img/fx.jpeg" style="width: 400px; height: 340px;" class="card-img-top"
+                                    alt="Fx-Fantasy">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Fx-Fantasy</h3>
+                                <p class="card-text">Dive into the exciting world of fantasy sports with our
+                                    user-friendly platforms. Create your dream team, compete with friends, and win
+                                    amazing prizes. Our platform offers a variety of sports and leagues to choose from,
+                                    ensuring that every fan finds their niche.</p>
+                                <h5>Key Features:</h5>
+                                <ul class="list-unstyled">
+                                    <li>🎮 Exciting gameplay with real-time updates</li>
+                                    <li>🖥️ User-friendly interface for easy navigation</li>
+                                    <li>🏆 Competitive prizes and rewards for top players</li>
+                                    <li>📊 Detailed statistics and analytics for informed decisions</li>
+                                    <li>🤝 Community features to connect with other players</li>
+                                </ul>
+                                <!--<a href="#" class="btn btn-primary">Join the Fun</a>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card text-center shadow-lg border-0">
+                            <div class="d-flex justify-content-center">
+                                <img src="img/fx.jpeg" style="width: 400px; height: 340px;" class="card-img-top"
+                                    alt="Mx-Fantasy">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Mx-Fantasy</h3>
+                                <p class="card-text">Dive into the exciting world of fantasy sports with our
+                                    user-friendly platforms. Create your dream team, compete with friends, and win
+                                    amazing prizes. Our platform offers a variety of sports and leagues to choose from,
+                                    ensuring that every fan finds their niche.</p>
+                                <h5>Key Features:</h5>
+                                <ul class="list-unstyled">
+                                    <li>🎮 Exciting gameplay with real-time updates</li>
+                                    <li>🖥️ User-friendly interface for easy navigation</li>
+                                    <li>🏆 Competitive prizes and rewards for top players</li>
+                                    <li>📊 Detailed statistics and analytics for informed decisions</li>
+                                    <li>🤝 Community features to connect with other players</li>
+                                </ul>
+                                <!--<a href="#" class="btn btn-primary">Join the Fun</a>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#serviceCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#serviceCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Approach Section -->
+    <!--<section class="w-100 py-3 py-md-5 bg-warning">-->
+    <!--    <div class="container px-4">-->
+
+
+
+
+    <!--    </div>-->
+
+    <!--</section>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- CREATER RUNWAY -->
+    <!--<section class="w-100 py-4 py-md-5 bg-light">-->
+    <!--    <div class="container px-4">-->
+
+    <!--    </div>-->
+    <!--</section>-->
+
+    <!-- Team Section -->
+    <section class="bg-gradient-custom py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Column (Title and Subheading) -->
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h2 class="expert-heading text-uppercase fw-bold">Meet Our Experts</h2>
+                    <p class="team-title">OUR TEAM</p>
+                </div>
+                <!-- Right Column (Card with Text) -->
+                <div class="col-lg-8">
+                    <div class="card shadow-custom border-0">
+                        <div class="card-body p-4">
+                            <p class="card-text card-text-custom">
+                                At M ARSHMAAN INDIA PRIVATE LIMITED, our team is a blend of diverse talents—from
+                                visionary leaders and hospitality experts to innovative marketers and tech-savvy
+                                developers. We are passionate about delivering luxury experiences, fresh grocery
+                                solutions, and engaging fantasy sports platforms. Our commitment to excellence,
+                                sustainability, and customer satisfaction drives us to continuously improve and
+                                innovate. Together, we strive to create memorable experiences and elevate our brand
+                                while exceeding the expectations of our valued customers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section class="w-100 bg-light" id="contact">
+        <div class="container">
+            <div class="row  rounded shadow-lg p-4">
+                <h1 class="text-center text-3xl font-bold mb-4">Contact Us</h1>
+                <div class="col-md-4 d-flex flex-column justify-content-center align-items-start">
+                    <h2 class="text-2xl font-semibold mb-4">Have any queries in mind?</h2>
+                    <p class="text-lg mb-3">We can help you! Feel free to reach out to us.</p>
+                    <h3 class="font-weight-bold">Contact Details:</h3>
+                    <p>Email: <a href="mailto:info@marshmaanindia.com" class="text-dark">info@marshmaanindia.com</a></p>
+                    <p>Phone: <a href="tel:+1234567890" class="text-dark">+1 234 567 890</a></p>
+                    <h3 class="font-weight-bold">Follow us on social media:</h3>
+                    <p>
+                        <a href="#" class="text-dark me-2">Facebook</a> |
+                        <a href="#" class="text-dark me-2">Twitter</a> |
+                        <a href="#" class="text-dark">Instagram</a>
+                    </p>
+                </div>
+                <div class="col-md-8">
+                    <form id="contact-form">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Your Name"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Your Email"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="4"
+                                placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="text-center text-white bg-secondary">
+        <!-- Grid container -->
+        <div class="container">
+            <!-- Section: Links -->
+            <section class="mt-5">
+                <!-- Grid row-->
+                <div class="row text-center d-flex justify-content-center pt-5">
+                    <!-- Grid column -->
+                    <div class="col-md-2 mb-3">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="index.html" class="text-white text-decoration-none">Home</a>
+                        </h6>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 mb-3">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="index.html#contact" class="text-white text-decoration-none">Contact</a>
+                        </h6>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 mb-3">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="privacy.html" class="text-white text-decoration-none">Privacy Policy</a>
+                        </h6>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 mb-3">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="terms.html" class="text-white text-decoration-none">Terms & Condition</a>
+                        </h6>
+                    </div>
+
+                </div>
+                <!-- Grid row-->
+            </section>
+            <!-- Section: Links -->
+
+            <hr class="my-5" />
+
+            <!-- Section: Text -->
+            <section class="mb-5">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-8">
+                        <p>
+                            M ARSHMAAN INDIA PRIVATE LIMITED excels in hospitality and e-commerce, offering luxurious
+                            resorts, fresh groceries, and fantasy sports platforms.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- Section: Text -->
+
+            <!-- Section: Social -->
+            <section class="text-center mb-5">
+                <a href="#" class="text-white me-4">
+                    <ion-icon class="fs-4" name="logo-facebook"></ion-icon>
+                </a>
+                <a href="#" class="text-white me-4">
+                    <ion-icon class="fs-4" name="logo-twitter"></ion-icon>
+                </a>
+
+                <a href="#" class="text-white me-4">
+                    <ion-icon class="fs-4" name="logo-instagram"></ion-icon>
+                </a>
+
+            </section>
+            <!-- Section: Social -->
+            <!-- Section: Social -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2024 Copyright:
+            <a class="text-white" href="#">marshmaanindia.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <!-- Ionicons and Bootstrap JS Bundle -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-..."
+        crossorigin="anonymous"></script>
+
+    <!-- Include EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script>
+        (function () {
+            emailjs.init("kQHfyLCW7eazrJsof"); // Replace with your EmailJS user ID
+        })();
+
+        // Add event listener for form submission
+        document.getElementById("contact-form").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Get form values
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            // Create the email data
+            var templateParams = {
+                name: name,
+                email: email,
+                message: message
+            };
+
+            // Send the email
+            emailjs.send("service_xg7ccli", "template_sf85wu6", templateParams)
+                .then(function (response) {
+                    console.log("Email sent successfully!", response.status, response.text);
+                    alert("Your message has been sent successfully!");
+                    document.getElementById("contact-form").reset(); // Reset the form
+                }, function (error) {
+                    console.error("Failed to send email. Error: ", error);
+                    alert("There was an error sending your message. Please try again later.");
+                });
+        });
+    </script>
+
+</body>
+
+</html>
